@@ -50,10 +50,12 @@ function draw() {
 
     if(block2.isTouching(ball) && ball.bounceOff(block2)){
         ball.shapeColor ="red";
+        music.play();
     }
 
     if(block3.isTouching(ball) && ball.bounceOff(block3)){
         ball.shapeColor = "voilet";
+        music.play();
     }
 
     drawSprites();
